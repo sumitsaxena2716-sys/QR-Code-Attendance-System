@@ -35,7 +35,7 @@ This system uses **QR Code scanning** to mark attendance efficiently and securel
 | No Scan | Absent |
 
 ---
-
+```
 ## 📂 Folder Structure
 
 QR-Code-and-OTP-Attendance-System/
@@ -59,7 +59,7 @@ QR-Code-and-OTP-Attendance-System/
 │   ├── 102.jpg
 │
 └── README.md
-
+```
 ---
 
 ## 🛠️ Technologies Used
@@ -77,14 +77,14 @@ QR-Code-and-OTP-Attendance-System/
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/sumitsaxena2716-sys/QR-Code-and-OTP-Attendance-System.git
-cd QR-Code-and-OTP-Attendance-System
+    git clone https://github.com/sumitsaxena2716-sys/QR-Code-and-OTP-Attendance-System.git
+    cd QR-Code-and-OTP-Attendance-System
 2️⃣ Install Dependencies
-pip install flask pandas openpyxl qrcode
+    pip install flask pandas openpyxl qrcode
 3️⃣ Run Project
-python app.py
+    python app.py
 4️⃣ Open Browser
-http://127.0.0.1:5000
+    http://127.0.0.1:5000
 🔐 Teacher Login
 
 Username: Admin
