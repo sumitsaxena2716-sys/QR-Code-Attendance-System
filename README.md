@@ -74,15 +74,17 @@ QR-Code-and-OTP-Attendance-System/
 ---
 
 ## ⚙️ Installation & Setup
-
-### 1️⃣ Clone Repository
-```bash
+```
+1️⃣ Clone Repository
     git clone https://github.com/sumitsaxena2716-sys/QR-Code-and-OTP-Attendance-System.git
     cd QR-Code-and-OTP-Attendance-System
+
 2️⃣ Install Dependencies
     pip install flask pandas openpyxl qrcode
+
 3️⃣ Run Project
     python app.py
+
 4️⃣ Open Browser
     http://127.0.0.1:5000
 🔐 Teacher Login
