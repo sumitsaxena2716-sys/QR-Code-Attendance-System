@@ -1,102 +1,80 @@
-# 📌 QR Code Attendance System
+# 📋 Smart Attendance System (QR Code)
 
-A **Smart Attendance System** built using **Python (Flask), HTML, CSS, JavaScript, and Excel automation**.
+A QR-code-based attendance verification system that replaces manual roll-call with fast, secure check-ins — preventing proxy attendance through unique, validated QR codes tied to individual student records.
 
-This system uses **QR Code scanning** to mark attendance efficiently and securely.
-
----
-
-## 🚀 Features
-
-✅ QR Code based attendance  
-✅ Time-based status (Present / Late / Absent)  
-✅ Teacher override (password protected)  
-✅ Automatic Excel report generation  
-✅ Monthly attendance sheet auto-create  
-
-### 🎨 Excel Highlighting
-🟢 Present (Green)  
-🔵 Late (Blue)  
-🔴 Absent (Red)  
-🔴 Sundays highlighted  
-
-✅ Dashboard (Daily + Monthly analytics)  
-✅ Student image display on success  
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sumitsaxena2716-sys_QR-Code-Attendance-System&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sumitsaxena2716-sys_QR-Code-Attendance-System)
 
 ---
 
-## 🧠 Working Logic
+## 🎯 Overview
 
-| Time | Status |
-|------|--------|
-| Before 9:05 AM | Present |
-| 9:05 – 9:15 AM | Late |
-| After 9:15 AM | Teacher Permission Required |
-| No Scan | Absent |
+Traditional roll-call attendance is slow and prone to proxy marking (one student marking attendance for another). This system solves that by:
+
+- Generating a **unique QR code** for each student, tied to their student ID
+- Validating each scan against the database in real time to **block duplicate or invalid check-ins**
+- Logging attendance instantly with timestamp, reducing manual paperwork
 
 ---
+
+## ✨ Features
+
+- 🔐 Unique QR code generation per student
+- ⚡ Real-time scan validation (prevents proxy/duplicate attendance)
+- 🗄️ SQL-backed attendance records, query-ready for reports
+- 🖥️ Simple HTML/CSS interface for check-in and admin view
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | Python |
+| Frontend | HTML, CSS |
+| Database | SQL |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.9+
+- MySQL / SQLite (depending on your configured DB)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/sumitsaxena2716-sys/QR-Code-Attendance-System.git
+cd QR-Code-Attendance-System
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python app.py
 ```
-## 📂 Folder Structure
 
-QR-Code-and-OTP-Attendance-System/
-│
-├── app.py                    # Main Flask Backend
-├── students.xlsx             # Student Database
-├── April_Attendance.xlsx     # Auto-generated Monthly File
-│
-├── templates/                # Frontend HTML Pages
-│   ├── index.html
-│   ├── scanner.html
-│   ├── success.html
-│   ├── login.html
-│   ├── dashboard.html
-│
-├── static/                   # JS Files
-│   └── login.js
-│
-├── images/                   # Student Images
-│   ├── 101.jpg
-│   ├── 102.jpg
-│
-└── README.md
-```
----
+Then open `http://localhost:5000` (or the port shown in your terminal) in your browser.
 
-## 🛠️ Technologies Used
+> **Note:** Update the `requirements.txt` and run command above to match your actual entry-point file and dependencies.
 
-- Python (Flask)  
-- HTML, CSS, JavaScript  
-- OpenCV / HTML5 QR Scanner  
-- Pandas  
-- OpenPyXL (Excel Automation)  
-- SMTP (Email Sending)  
+
+## 🧠 What I Learned
+
+- Designing unique, tamper-resistant identifiers (QR codes) tied to real-world records
+- Building validation logic to close common loopholes in manual systems
+- Structuring a SQL schema for fast, query-ready attendance lookups
 
 ---
 
-## ⚙️ Installation & Setup
-```
-1️⃣ Clone Repository
-    https://github.com/sumitsaxena2716-sys/QR-Code-Attendance-System.git
-    cd QR-Code-and-OTP-Attendance-System
+## 📄 License
 
-2️⃣ Install Dependencies
-    pip install flask pandas openpyxl qrcode
+This project is licensed under the MIT License.
 
-3️⃣ Run Project
-    python app.py
+---
 
-4️⃣ Open Browser
-    http://127.0.0.1:5000
-🔐 Teacher Login
+## 👤 Author
 
-Username: Admin
-Password: admin@123
-
-📧 Email Setup
-
-In app.py:
-
-SENDER_EMAIL = "your_email@gmail.com"
-APP_PASSWORD = "your_app_password"
-
-👉 Use Gmail App Password (not normal password)
+**Sumit Saxena**
+[LinkedIn](https://linkedin.com/in/sumit-saxena-54566b310) · [Email](mailto:sumitsaxena2716@gmail.com) · [GitHub](https://github.com/sumitsaxena2716-sys)
