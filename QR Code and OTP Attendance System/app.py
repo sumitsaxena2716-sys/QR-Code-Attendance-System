@@ -12,6 +12,7 @@ from openpyxl.styles import PatternFill, Font, Alignment
 
 app = Flask(__name__)
 
+
 # ================= CONFIG =================
 TEACHER_USERNAME = "Admin"
 TEACHER_PASSWORD = "admin@123"
