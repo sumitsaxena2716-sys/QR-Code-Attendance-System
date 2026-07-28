@@ -1,4 +1,4 @@
-# 📋 Smart Attendance System (QR Code) 
+# 📋 Smart Attendance System (QR Code)
 
 A QR-code-based attendance verification system that replaces manual roll-call with fast, secure check-ins — preventing proxy attendance through unique, validated QR codes tied to individual student records.
 
