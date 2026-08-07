@@ -5,12 +5,12 @@ import os
 import qrcode
 import calendar
 import smtplib
-from email.message import EmailMessage
-
+from email.message import EmailMessage
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import PatternFill, Font, Alignment
 
 app = Flask(__name__)
+
 
 
 # ================= CONFIG =================
@@ -26,6 +26,7 @@ attendance = {}
 GREEN = PatternFill(start_color="90EE90", fill_type="solid")
 BLUE = PatternFill(start_color="87CEFA", fill_type="solid")
 RED = PatternFill(start_color="FF9999", fill_type="solid")
+
 
 
 # ================= ROUTES =================
